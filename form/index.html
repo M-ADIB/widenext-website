@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Start a project | Widenext</title>
+<meta name="description" content="Tell Widenext about your project in three short steps, then book a call with the team.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F3EFE6">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/sora-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="../css/style.css?v=21">
+<link rel="stylesheet" href="../css/form.css?v=2">
+</head>
+<body class="fp">
+<a class="skip" href="#apply">Skip to the form</a>
+
+<header class="fp-top">
+  <a class="top-logo" href="../" aria-label="Widenext home"><img src="../assets/logo/widenext-duo-light.svg" alt="" width="512" height="94"></a>
+  <a class="fp-back" href="../">Back to site</a>
+</header>
+
+<main class="fp-main" id="main">
+  <div class="fp-intro">
+    <p class="kicker">Start a project</p>
+    <h1 class="fp-title">Tell us what you're building.</h1>
+    <p class="body-lg">Three short steps, about two minutes. Then pick a time to talk with the team.</p>
+  </div>
+
+  <div class="fp-card" id="apply">
+    <ol class="fp-steps" aria-label="Progress">
+      <li data-step-label="1" aria-current="step"><span>About you</span></li>
+      <li data-step-label="2"><span>Project</span></li>
+      <li data-step-label="3"><span>Goals</span></li>
+      <li data-step-label="4"><span>Book a call</span></li>
+    </ol>
+    <div class="fp-bar" aria-hidden="true"><i data-bar></i></div>
+    <p class="fp-stepcount" data-stepcount aria-live="polite">Step 1 of 4</p>
+
+    <form class="fp-form" data-apply novalidate>
+      <p class="fp-alert" data-alert role="alert" hidden></p>
+
+      <section class="fp-panel" data-panel="1" aria-labelledby="p1-title">
+        <h2 class="fp-h" id="p1-title" tabindex="-1">Let's get to know you</h2>
+        <div class="fp-grid">
+          <div class="field">
+            <label for="a-first">First name *</label>
+            <input id="a-first" name="first_name" type="text" autocomplete="given-name" required data-check="name" aria-describedby="a-first-err">
+            <p class="err" id="a-first-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="a-last">Last name *</label>
+            <input id="a-last" name="last_name" type="text" autocomplete="family-name" required data-check="name" aria-describedby="a-last-err">
+            <p class="err" id="a-last-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="a-email">Work email *</label>
+            <input id="a-email" name="email" type="email" autocomplete="email" inputmode="email" required data-check="email" aria-describedby="a-email-err">
+            <p class="err" id="a-email-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="a-phone">Phone or WhatsApp *</label>
+            <input id="a-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" value="+966 " required data-check="phone" aria-describedby="a-phone-hint a-phone-err">
+            <p class="hint" id="a-phone-hint">Start with your country code, like +966 or +971.</p>
+            <p class="err" id="a-phone-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="a-company">Company *</label>
+            <input id="a-company" name="company" type="text" autocomplete="organization" required data-check="text" aria-describedby="a-company-err">
+            <p class="err" id="a-company-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="a-role">Your role <span class="opt">optional</span></label>
+            <input id="a-role" name="role" type="text" autocomplete="organization-title">
+          </div>
+        </div>
+      </section>
+
+      <section class="fp-panel" data-panel="2" aria-labelledby="p2-title" hidden>
+        <h2 class="fp-h" id="p2-title" tabindex="-1">Tell us about the project</h2>
+
+        <fieldset class="fp-q" data-group="country" aria-describedby="q-country-err">
+          <legend>Where are you based? *</legend>
+          <div class="opts opts-2">
+            <label class="opt-btn"><input type="radio" name="country" value="Saudi Arabia"><span>Saudi Arabia</span></label>
+            <label class="opt-btn"><input type="radio" name="country" value="United Arab Emirates"><span>United Arab Emirates</span></label>
+            <label class="opt-btn"><input type="radio" name="country" value="Other GCC"><span>Another GCC country</span></label>
+            <label class="opt-btn"><input type="radio" name="country" value="Elsewhere"><span>Elsewhere</span></label>
+          </div>
+          <p class="err" id="q-country-err" aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="fp-q" data-group="services" aria-describedby="q-services-hint q-services-err">
+          <legend>What do you need? *</legend>
+          <p class="hint" id="q-services-hint">Pick all that apply.</p>
+          <div class="opts opts-2">
+            <label class="opt-btn"><input type="checkbox" name="services" value="Brand strategy and identity"><span>Brand strategy and identity</span></label>
+            <label class="opt-btn"><input type="checkbox" name="services" value="Creative and campaigns"><span>Creative and campaigns</span></label>
+            <label class="opt-btn"><input type="checkbox" name="services" value="Social media and content"><span>Social media and content</span></label>
+            <label class="opt-btn"><input type="checkbox" name="services" value="Experiences and activations"><span>Experiences and activations</span></label>
+            <label class="opt-btn"><input type="checkbox" name="services" value="Digital and media"><span>Digital and media</span></label>
+            <label class="opt-btn"><input type="checkbox" name="services" value="Creative production"><span>Creative production</span></label>
+            <label class="opt-btn"><input type="checkbox" name="services" value="AI, 3D and motion"><span>AI, 3D and motion</span></label>
+            <label class="opt-btn"><input type="checkbox" name="services" value="Not sure yet"><span>Not sure yet</span></label>
+          </div>
+          <p class="err" id="q-services-err" aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="fp-q" data-group="budget" aria-describedby="q-budget-err">
+          <legend>What budget are you working with? *</legend>
+          <div class="opts opts-2">
+            <label class="opt-btn"><input type="radio" name="budget" value="Under SAR 100K"><span>Under SAR 100K</span></label>
+            <label class="opt-btn"><input type="radio" name="budget" value="SAR 100K to 250K"><span>SAR 100K to 250K</span></label>
+            <label class="opt-btn"><input type="radio" name="budget" value="SAR 250K to 500K"><span>SAR 250K to 500K</span></label>
+            <label class="opt-btn"><input type="radio" name="budget" value="SAR 500K and above"><span>SAR 500K and above</span></label>
+          </div>
+          <p class="err" id="q-budget-err" aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="fp-q" data-group="timeframe" aria-describedby="q-timeframe-err">
+          <legend>When do you want to start? *</legend>
+          <div class="opts opts-2">
+            <label class="opt-btn"><input type="radio" name="timeframe" value="As soon as possible"><span>As soon as possible</span></label>
+            <label class="opt-btn"><input type="radio" name="timeframe" value="Within 3 months"><span>Within 3 months</span></label>
+            <label class="opt-btn"><input type="radio" name="timeframe" value="3 to 6 months"><span>3 to 6 months</span></label>
+            <label class="opt-btn"><input type="radio" name="timeframe" value="Just exploring"><span>Just exploring</span></label>
+          </div>
+          <p class="err" id="q-timeframe-err" aria-live="polite"></p>
+        </fieldset>
+      </section>
+
+      <section class="fp-panel" data-panel="3" aria-labelledby="p3-title" hidden>
+        <h2 class="fp-h" id="p3-title" tabindex="-1">Let's align on your goals</h2>
+        <div class="field">
+          <label for="a-brief">What do you want this project to achieve? *</label>
+          <textarea id="a-brief" name="brief" rows="5" required data-check="brief" aria-describedby="a-brief-hint a-brief-err"></textarea>
+          <p class="hint" id="a-brief-hint">A few lines is enough. What's the challenge, and what does success look like?</p>
+          <p class="err" id="a-brief-err" aria-live="polite"></p>
+        </div>
+        <fieldset class="fp-q" data-group="show_up" aria-describedby="q-show_up-err">
+          <legend>Will you let us know if you can't make the call or need to reschedule? *</legend>
+          <div class="opts opts-2">
+            <label class="opt-btn"><input type="radio" name="show_up" value="Yes"><span>Yes</span></label>
+            <label class="opt-btn"><input type="radio" name="show_up" value="No"><span>No</span></label>
+          </div>
+          <p class="err" id="q-show_up-err" aria-live="polite"></p>
+        </fieldset>
+      </section>
+
+      <section class="fp-panel" data-panel="4" aria-labelledby="p4-title" hidden>
+        <h2 class="fp-h" id="p4-title" tabindex="-1">You're in. Pick a time.</h2>
+        <p class="fp-sub">Choose a slot that suits you. The calendar already has your name and email.</p>
+        <div class="fp-cal" data-cal>
+          <p class="fp-loading" data-cal-loading>Loading the calendar…</p>
+        </div>
+        <p class="fp-slow" data-cal-slow hidden>The calendar is taking a while. <a data-cal-open href="#" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+        <div class="fp-nocal" data-nocal hidden>
+          <a class="btn btn-blue" data-wa href="https://wa.me/966565500009" target="_blank" rel="noopener"><span>Book on WhatsApp</span><span class="arr" aria-hidden="true"></span></a>
+        </div>
+      </section>
+
+      <div class="fp-actions" data-actions>
+        <button class="btn btn-line fp-prev" type="button" data-prev hidden><span>Back</span></button>
+        <button class="btn btn-blue fp-next" type="submit" data-next><span data-next-label>Continue</span><span class="arr" aria-hidden="true"></span></button>
+      </div>
+    </form>
+
+    <div class="fp-end" data-end="booked" hidden tabindex="-1" role="status">
+      <p class="kicker">Booked</p>
+      <h2 class="fp-h">Thank you, <span data-first></span>. See you on the call.</h2>
+      <p class="fp-sub">The calendar invite is on its way to your inbox. If anything changes, use the link in that email to reschedule.</p>
+      <a class="btn btn-line" href="../"><span>Back to the site</span><span class="arr" aria-hidden="true"></span></a>
+    </div>
+
+    <div class="fp-end" data-end="received" hidden tabindex="-1" role="status">
+      <p class="kicker">Application received</p>
+      <h2 class="fp-h">Thank you, <span data-first></span>.</h2>
+      <p class="fp-sub">We'll read your answers and come back to you if there's a fit.</p>
+      <a class="btn btn-line" href="../#work"><span>See our work</span><span class="arr" aria-hidden="true"></span></a>
+    </div>
+  </div>
+</main>
+
+<script src="../js/apply.js?v=4"></script>
+</body>
+</html>
